@@ -22,6 +22,8 @@ private slots:
 
     void on_btnJogar_clicked();
 
+    void on_actionResolver_triggered();
+
 private:
     Ui::MainSudoku2 *ui;
 };

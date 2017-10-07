@@ -25,6 +25,10 @@ public:
   // Testa se a jogada indica que o uruario quer encerrar o jogo
   bool fim_de_jogo() const;
 
+  inline int getLinha(){return i;}
+  inline int getColuna(){return j;}
+  inline int getValor(){return v;}
+
   friend class Sudoku;
 };
 
@@ -52,6 +56,9 @@ public:
   unsigned num_casas_vazias() const;
   // Determina automaticamente a solucao do tabuleiro (preenche as casas vazias)
   void resolver(void);
+
+  inline uint8_t getJogada(int linha, int coluna){return x[linha][coluna];}
+
 };
 
 //extern Jogada Jo;

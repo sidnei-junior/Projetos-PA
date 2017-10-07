@@ -11,14 +11,35 @@ MainSudoku2::MainSudoku2(QWidget *parent) :
 {
 
     ui->setupUi(this);
+    /////////////// deixar inicialmente invisível os campos com as informações das jogadas
     ui->btnJogar->setVisible(false);
     ui->labelColuna->setVisible(false);
     ui->labelLinha->setVisible(false);
     ui->spinBox->setVisible(false);
     ui->labelValor->setVisible(false);
-    QTableWidgetItem *theItem = new QTableWidgetItem();
-    theItem->setData(Qt::EditRole, 1);
-    ui->tblSudoku->setItem(1,1,theItem);
+    //ui->tblSudoku->cellWidget(1,2)->setEnabled(false);
+
+    /////////////// inserir as jogadas que já temos no tabulerio par o usuário
+    int aux; // variável para armazenar cada valor sovbre o Sudoku.
+    for(int i = 0; i <9;i++)
+    {
+        for(int j = 0; j <9;j++)
+        {
+            aux = S.getJogada(i,j);
+
+            if(aux != 0)
+            {
+                QTableWidgetItem *theItem = new QTableWidgetItem();
+                theItem->setData(Qt::EditRole, aux);
+                ui->tblSudoku->setItem(i,j,theItem);
+                //ui->tblSudoku->cellWidget(i,j)->setEnabled(false);
+            }
+        }
+    }
+
+
+
+
 }
 
 MainSudoku2::~MainSudoku2()
@@ -137,8 +158,40 @@ void MainSudoku2::on_btnJogar_clicked()
 
     ///////////////// Criando Jogada
 
-    Jogada newJ(indL,indC,valor);
-    S.jogada_valida(newJ);
+    Jogada newJ(indL,indC-1,valor);
+
+    if(S.jogada_valida(newJ))
+    {
+        S.fazer_jogada(newJ);
+        QTableWidgetItem *theItem = new QTableWidgetItem();
+        theItem->setData(Qt::EditRole, valor);
+        ui->tblSudoku->setItem(indL,indC-1,theItem);
+    }
+
 
     ///////////////// Inserir a jogada no tabuleiro
+}
+
+void MainSudoku2::on_actionResolver_triggered()
+{
+    S.resolver();
+
+    /////////////// inserir as jogadas que já temos no tabulerio par o usuário
+    int aux; // variável para armazenar cada valor sovbre o Sudoku.
+    for(int i = 0; i <9;i++)
+    {
+        for(int j = 0; j <9;j++)
+        {
+            aux = S.getJogada(i,j);
+
+            if(aux != 0)
+            {
+                QTableWidgetItem *theItem = new QTableWidgetItem();
+                theItem->setData(Qt::EditRole, aux);
+                ui->tblSudoku->setItem(i,j,theItem);
+                //ui->tblSudoku->cellWidget(i,j)->setEnabled(false);
+            }
+        }
+    }
+
 }
