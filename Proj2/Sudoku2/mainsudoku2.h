@@ -2,6 +2,7 @@
 #define MAINSUDOKU2_H
 
 #include <QMainWindow>
+#include "Sudoku.h"
 
 namespace Ui {
 class MainSudoku2;
@@ -16,12 +17,15 @@ public:
     ~MainSudoku2();
 
 private slots:
-    void on_tblSudoku_cellChanged(int row, int column);
 
     void on_tblSudoku_doubleClicked(const QModelIndex &index);
+
+    void on_btnJogar_clicked();
 
 private:
     Ui::MainSudoku2 *ui;
 };
+
+extern Sudoku S;
 
 #endif // MAINSUDOKU2_H

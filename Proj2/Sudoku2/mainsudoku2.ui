@@ -472,18 +472,24 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>120</y>
+      <x>400</x>
+      <y>180</y>
       <width>42</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>9</number>
     </property>
    </widget>
    <widget class="QLabel" name="labelLinha">
     <property name="geometry">
      <rect>
       <x>360</x>
-      <y>130</y>
+      <y>120</y>
       <width>47</width>
       <height>13</height>
      </rect>
@@ -503,6 +509,32 @@
     </property>
     <property name="text">
      <string>Coluna:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnJogar">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>220</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Jogar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelValor">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>180</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Valor:</string>
     </property>
    </widget>
   </widget>

@@ -54,8 +54,8 @@ public:
   void resolver(void);
 };
 
-extern Jogada J;
-extern Sudoku SK;
+//extern Jogada Jo;
+
 
 #endif // _SUDOKU_H_
 
