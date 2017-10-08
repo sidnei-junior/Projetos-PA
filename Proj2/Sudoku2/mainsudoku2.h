@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include "Sudoku.h"
+#include <QLabel>
+#include <Qpixmap>
 
 namespace Ui {
 class MainSudoku2;
@@ -26,6 +28,7 @@ private slots:
 
 private:
     Ui::MainSudoku2 *ui;
+    QPixmap Img;
 };
 
 extern Sudoku S;

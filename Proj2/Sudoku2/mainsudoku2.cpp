@@ -1,13 +1,20 @@
 #include "mainsudoku2.h"
 #include "ui_mainsudoku2.h"
 #include "sudoku.h"
+#include <iostream>
+using namespace std;
+
+// biblioteca cor
+#include <QPainter>
+#include <QPen>
 
 Sudoku S;
 
 
 MainSudoku2::MainSudoku2(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainSudoku2)
+    ui(new Ui::MainSudoku2),
+    Img(131,51)
 {
 
     ui->setupUi(this);
@@ -18,6 +25,11 @@ MainSudoku2::MainSudoku2(QWidget *parent) :
     ui->spinBox->setVisible(false);
     ui->labelValor->setVisible(false);
     //ui->tblSudoku->cellWidget(1,2)->setEnabled(false);
+
+    /////////////// Tela de fundo
+    QColor corDeFundo(245,245,220);
+    Img.fill(corDeFundo);
+    //ui->label_19->setPixmap(Img);
 
     /////////////// inserir as jogadas que já temos no tabulerio par o usuário
     int aux; // variável para armazenar cada valor sovbre o Sudoku.
@@ -160,8 +172,12 @@ void MainSudoku2::on_btnJogar_clicked()
 
     Jogada newJ(indL,indC-1,valor);
 
+
+    ///////////////// Inserir a jogada no tabuleiro
+
     if(S.jogada_valida(newJ))
     {
+        cout << "??";
         S.fazer_jogada(newJ);
         QTableWidgetItem *theItem = new QTableWidgetItem();
         theItem->setData(Qt::EditRole, valor);
@@ -169,7 +185,7 @@ void MainSudoku2::on_btnJogar_clicked()
     }
 
 
-    ///////////////// Inserir a jogada no tabuleiro
+
 }
 
 void MainSudoku2::on_actionResolver_triggered()
