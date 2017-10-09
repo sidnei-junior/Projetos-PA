@@ -5,6 +5,8 @@
 #include "Sudoku.h"
 #include <QLabel>
 #include <Qpixmap>
+#include <QFile>
+#include <QIODevice>
 
 namespace Ui {
 class MainSudoku2;
@@ -25,6 +27,8 @@ private slots:
     void on_btnJogar_clicked();
 
     void on_actionResolver_triggered();
+
+    void on_ler_clicked();
 
 private:
     Ui::MainSudoku2 *ui;

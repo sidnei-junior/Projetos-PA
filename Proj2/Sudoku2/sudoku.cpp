@@ -2,10 +2,14 @@
 #include <fstream>
 #include <string>
 #include <conio.h>
+#include <QFile>
+#include <QIODevice>
+#include <QTextStream>
 #include <stack> // quando incluo sudoku.h também incluo a chamada a <stack> que está lá?
 #include "sudoku.h"
 
 using namespace std;
+//----------------
 
 // Construtor (por default, cria Jogada que termina o jogo)
 Jogada::Jogada(int I, int J, int V)

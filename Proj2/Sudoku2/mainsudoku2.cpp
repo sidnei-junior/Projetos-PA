@@ -7,6 +7,10 @@ using namespace std;
 // biblioteca cor
 #include <QPainter>
 #include <QPen>
+#include <QFile>
+#include <QIODevice>
+#include <QTextStream>
+#include <QMessageBox>
 
 Sudoku S;
 
@@ -209,5 +213,88 @@ void MainSudoku2::on_actionResolver_triggered()
             }
         }
     }
+
+}
+
+
+void MainSudoku2::on_ler_clicked()
+{
+    /////////// Abrir Salvar de Sidnei >>>>>>>>>>
+
+    /////////// Abrindo o arquivo.
+
+    QFile f("sudoku.txt");
+    if(!f.exists())
+    {
+        //QMessageBox::information(0,"info",f.errorString());
+        cout << "Não existe Arquivo!!!!!!!!!!";
+    }else{
+
+        cout << "Funfou!!!!";
+    }
+
+    if(!f.open(QIODevice::ReadOnly))
+    {
+
+
+        cout << "Não Abriu!!!";
+
+    }else{
+        QMessageBox::information(0,"info",f.errorString());
+       cout << "Funfou!!!!";
+    }
+
+    ////////////Pegando o texto do arquivo aberto;
+
+    QTextStream ts(&f);
+
+    QString str = ts.readLine();
+
+    ui->labelColuna->show();
+    ui->labelColuna->setText(str);
+
+    str = ts.readLine();
+    //str = ts.readLine();
+    //str = ts.readLine();
+    str = ts.readLine();
+
+    ui->labelLinha->show();
+    ui->labelLinha->setText(str);
+
+    /////////// Abrir Salvar de Sidnei <<<<<<<<<<
+
+
+    /*/
+    //int Max_num_of_Columns= 9;
+    //int Max_num_of_Lines = 9;
+    QFile file("‪sudoku.txt");
+    if (!file.open(QIODevice::ReadOnly))
+    {
+       QMessageBox::information(0,"info",file.errorString());
+    }
+    //QTextStream in(&file);
+    QString line =file.readLine();
+    QStringList fields = line.split(" ");
+
+    int aux; // variável para armazenar cada valor sovbre o Sudoku.
+    for(int i = 0; i <9;i++)
+    {
+        for(int j = 0; j <9;j++)
+        {
+            aux = S.getJogada(i,j);
+
+            if(aux != 0)
+            {
+                QTableWidgetItem *theItem = new QTableWidgetItem();
+                //QString m_prop = line_data.at(j);
+                theItem->setData(Qt::EditRole, aux);
+                ui->tblSudoku->setItem(i,j,theItem);
+                //ui->tblSudoku->cellWidget(i,j)->setEnabled(false);
+            }
+        }
+    }
+
+
+    //ui->tblSudoku->set(in.readAll());//*/
 
 }

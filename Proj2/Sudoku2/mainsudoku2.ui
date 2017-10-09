@@ -490,8 +490,8 @@
      <rect>
       <x>360</x>
       <y>120</y>
-      <width>47</width>
-      <height>13</height>
+      <width>161</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
@@ -538,6 +538,9 @@
     </property>
    </widget>
    <widget class="QLabel" name="label_20">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -554,6 +557,9 @@
     </property>
    </widget>
    <widget class="QLabel" name="label_21">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>105</x>
@@ -570,6 +576,9 @@
     </property>
    </widget>
    <widget class="QLabel" name="label_22">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>195</x>
@@ -586,6 +595,9 @@
     </property>
    </widget>
    <widget class="QLabel" name="label_23">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -599,6 +611,19 @@
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ler">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>270</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ler</string>
     </property>
    </widget>
   </widget>
