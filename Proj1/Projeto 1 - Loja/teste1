@@ -1,0 +1,7 @@
+LISTALIVRO 1
+L: "a";$1.1;"b"
+LISTACD 2
+C: "c";$2.2;12
+C: "e";$5.29;9
+LISTADVD 1
+D: "d";$3.29;120

@@ -28,6 +28,7 @@ MainSudoku2::MainSudoku2(QWidget *parent) :
     ui->labelLinha->setVisible(false);
     ui->spinBox->setVisible(false);
     ui->labelValor->setVisible(false);
+    ui->ler->setVisible(false);
     //ui->tblSudoku->cellWidget(1,2)->setEnabled(false);
 
     /////////////// Tela de fundo
@@ -36,7 +37,7 @@ MainSudoku2::MainSudoku2(QWidget *parent) :
     //ui->label_19->setPixmap(Img);
 
     /////////////// inserir as jogadas que já temos no tabulerio par o usuário
-    int aux; // variável para armazenar cada valor sovbre o Sudoku.
+    int aux; // variável para armazenar cada valor sobre o Sudoku.
     for(int i = 0; i <9;i++)
     {
         for(int j = 0; j <9;j++)

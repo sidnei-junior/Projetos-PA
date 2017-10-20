@@ -1,0 +1,75 @@
+26OPERAÇÕES DO ESTOQUE EM LOJA:
+
+ 0) Inicie o programa, com o estoque da loja vazio
+ 1) Acrescente um CD (0,5pt):
+    Samba Total - $18,15 - 12 faixas
+ 2) Acrescente um livro (0,5pt):
+    O Pequeno Príncipe - $38,00 - Saint Exupery
+ 3) Acrescente um DVD (0,5pt):
+    Queen Live - $23,98 - 127 minutos
+ 4) Imprima em tela o estoque da loja (1,0pt se correto: ver abaixo)
+ 5) Acrescente dois CDs (0,5pt):
+    Bebadosamba - $11,36 - 15 faixas
+    Rosa e Carvão - $21,00 - 17 faixas
+ 6) Exclua o CD "Samba Total" (1,0pt)
+ 7) Imprima em tela o estoque da loja (1,0pt se correto: ver abaixo) 
+ 8) Salve o estoque no arquivo "loja.txt" (1,0pt se correto: ver abaixo)
+ 9) Forneça seu arquivo para ser lido e impresso em tela pelo programa de um colega (1,0pt se correto)
+10) Inicie novamente o programa, com o estoque da loja vazio
+11) Leia e imprima em tela com seu programa o estoque do colega (1,0pt se correto) 
+12) Inicie novamente o programa, com o estoque da loja vazio
+13) Carregue o estoque, lendo o arquivo "arquivo_prova.txt" do SIGAA (1,0pt)
+14) Imprima em tela o estoque da loja (1,0pt se correto: ver abaixo)
+
+=======================
+ RESULTADO - QUESITO 4
+=======================
+
+LIVROS:
+0) L: "O Pequeno Principe";$38;"Saint Exupery"
+CDs:
+0) C: "Samba Total";$18.15;12
+DVDs:
+0) D: "Queen Live";$23.98;127
+
+=======================
+ RESULTADO - QUESITO 7
+=======================
+
+LIVROS:
+0) L: "O Pequeno Principe";$38;"Saint Exupery"
+CDs:
+0) C: "Bebadosamba";$11.36;15
+1) C: "Rosa e Carvao";$21;17
+DVDs:
+0) D: "Queen Live";$23.98;127
+
+=======================
+ RESULTADO - QUESITO 8
+=======================
+
+LISTALIVRO 1
+L: "O Pequeno Principe";$38;"Saint Exupery"
+LISTACD 2
+C: "Bebadosamba";$11.36;15
+C: "Rosa e Carvao";$21;17
+LISTADVD 1
+D: "Queen Live";$23.98;127
+
+=======================
+ RESULTADO - QUESITO 14
+=======================
+
+LIVROS:
+0) L: "Harry Potter e a Pedra Filosofal";$38;"J K Rowling"
+1) L: "O Hobbit";$42.15;"J R R Tolkien"
+CDs:
+0) C: "Bad";$11.36;15
+1) C: "The Bodyguard";$21;17
+2) C: "Musicas para Louvar";$13.16;15
+3) C: "Xou da Xuxa";$27;11
+DVDs:
+0) D: "Sai do chao";$23.98;127
+1) D: "Galinha Pintadinha";$10.15;92
+2) D: "Ao vivo";$20.17;102
+

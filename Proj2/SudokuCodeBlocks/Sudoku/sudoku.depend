@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1493925537 source:c:\users\sidnei\documents\segundo projeto de pa\sudoku_incompleto\console.cpp
+	<iostream>
+	<windows.h>
+	"console.h"
+
+1493925701 c:\users\sidnei\documents\segundo projeto de pa\sudoku_incompleto\console.h
+
+1507490553 source:c:\users\sidnei\documents\segundo projeto de pa\sudoku_incompleto\sudoku.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<conio.h>
+	<stack>
+	"console.h"
+	"sudoku.h"
+
+1506343679 c:\users\sidnei\documents\segundo projeto de pa\sudoku_incompleto\sudoku.h
+	<stack>
+
+1507382176 source:c:\users\sidnei\documents\segundo projeto de pa\sudoku_incompleto\sudoku_main.cpp
+	<iostream>
+	<cstdlib>
+	"console.h"
+	"sudoku.h"
+

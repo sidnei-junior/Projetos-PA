@@ -1,0 +1,11 @@
+LISTALIVRO 3
+L: "Memorial";$32.34;"Pedro"
+L: "Minha Vida";$2.85;"Adolfo"
+L: "Poemas";$13.14;"João de Sá"
+LISTACD 2
+C: "Solidão";$27.85;12
+C: "Verso Azul";$8.51;14
+LISTADVD 3
+D: "Combate VI";$14.38;126
+D: "Barroco";$8.51;72
+D: "Eu, Tu, Eles";$7.00;134

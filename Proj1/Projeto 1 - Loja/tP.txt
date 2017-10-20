@@ -1,0 +1,7 @@
+LISTALIVRO 1
+L: "Biel";$2.00;"geovane"
+LISTACD 2
+C: "geffe";$3.00;4
+C: "Samuel";$15.00;15
+LISTADVD 1
+D: "der";$12.00;123

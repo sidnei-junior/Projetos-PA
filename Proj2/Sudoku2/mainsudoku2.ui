@@ -297,6 +297,12 @@
       <height>272</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
     <property name="rowCount">
      <number>9</number>
     </property>
@@ -535,82 +541,6 @@
     </property>
     <property name="text">
      <string>Valor:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_20">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>121</y>
-      <width>271</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::HLine</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_21">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>105</x>
-      <y>40</y>
-      <width>91</width>
-      <height>271</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::VLine</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_22">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>195</x>
-      <y>40</y>
-      <width>91</width>
-      <height>271</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::VLine</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_23">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>211</y>
-      <width>271</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::HLine</enum>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="ler">
