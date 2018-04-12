@@ -1,1 +1,61 @@
 # depslib dependency file v1.0
+1504391973 source:c:\users\sidnei\git\projetos-pa\proj1\projeto 1 - loja\cd.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<fstream>
+	<limits>
+	"loja_heranca_incompleto.h"
+
+1504396294 c:\users\sidnei\git\projetos-pa\proj1\projeto 1 - loja\loja_heranca_incompleto.h
+	<iostream>
+	<string>
+	<cstring>
+	<fstream>
+
+1504396558 source:c:\users\sidnei\git\projetos-pa\proj1\projeto 1 - loja\dvd.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<fstream>
+	<limits>
+	"loja_heranca_incompleto.h"
+
+1504731354 source:c:\users\sidnei\git\projetos-pa\proj1\projeto 1 - loja\listacd.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<fstream>
+	<limits>
+	"loja_heranca_incompleto.h"
+
+1504391886 source:c:\users\sidnei\git\projetos-pa\proj1\projeto 1 - loja\livro.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<fstream>
+	<limits>
+	"loja_heranca_incompleto.h"
+
+1504540843 source:c:\users\sidnei\git\projetos-pa\proj1\projeto 1 - loja\loja.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<fstream>
+	<limits>
+	"loja_heranca_incompleto.h"
+
+1504378706 source:c:\users\sidnei\git\projetos-pa\proj1\projeto 1 - loja\main.cpp
+	<iostream>
+	<string>
+	<limits>
+	"loja_heranca_incompleto.h"
+
+1504441986 source:c:\users\sidnei\git\projetos-pa\proj1\projeto 1 - loja\produto.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<fstream>
+	<limits>
+	"loja_heranca_incompleto.h"
+

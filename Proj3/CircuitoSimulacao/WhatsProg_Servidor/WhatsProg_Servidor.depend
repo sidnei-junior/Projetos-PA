@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1510953645 source:c:\users\sidnei\git\projetos-pa\proj3\circuitosimulacao\whatsprog_servidor\dados_whatsprog.cpp
+	"dados_whatsprog.h"
+
+1510963103 c:\users\sidnei\git\projetos-pa\proj3\circuitosimulacao\whatsprog_servidor\dados_whatsprog.h
+	<string>
+	<stdint.h>
+
+1512347569 source:c:\users\sidnei\git\projetos-pa\proj3\circuitosimulacao\whatsprog_servidor\main.cpp
+	<iostream>
+	<string.h>
+	<cstdio>
+	<vector>
+	<algorithm>
+	"winsocket.h"
+	"mensageiro.h"
+	"dados_whatsprog.h"
+	"WhatsProg_Servidor.h"
+
+1510964397 c:\users\sidnei\git\projetos-pa\proj3\circuitosimulacao\whatsprog_servidor\winsocket.h
+	<iostream>
+	<cstdlib>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<string>
+
+1511721634 c:\users\sidnei\git\projetos-pa\proj3\circuitosimulacao\whatsprog_servidor\mensageiro.h
+
+1512349403 c:\users\sidnei\git\projetos-pa\proj3\circuitosimulacao\whatsprog_servidor\whatsprog_servidor.h
+	"dados_whatsprog.h"
+	<list>
+	<vector>
+	"winsocket.h"
+
+1512343415 source:c:\users\sidnei\git\projetos-pa\proj3\circuitosimulacao\whatsprog_servidor\whatsprog_servidor.cpp
+	"WhatsProg_Servidor.h"
+	<iostream>
+	<string.h>
+	<cstdio>
+	"winsocket.h"
+	"mensageiro.h"
+
+1510961248 source:c:\users\sidnei\git\projetos-pa\proj3\circuitosimulacao\whatsprog_servidor\winsocket.cpp
+	<iostream>
+	"winsocket.h"
+

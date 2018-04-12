@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1507890544 source:c:\users\sidnei\git\projetos-pa\proj3\circuitosimulacaocodeblocks\circuito-main.cpp
+	<iostream>
+	<string>
+	"circuito.h"
+
+1509241824 c:\users\sidnei\git\projetos-pa\proj3\circuitosimulacaocodeblocks\circuito.h
+	<iostream>
+	<vector>
+
+1446667744 source:c:\users\sidnei\git\projetos-pa\proj3\circuitosimulacaocodeblocks\main.cpp
+	<iostream>
+

@@ -2,6 +2,7 @@
 #define _CIRCUITO_H_
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -26,15 +27,15 @@ protected:
   bool_3S saida;
 public:
   Porta(unsigned NI=2);
-  Porta(const Porta &);
+  Porta(const Porta &p);
   inline virtual ~Porta() {}
 
   virtual ptr_Porta clone() const = 0;
   inline unsigned getNumInputs() const {return Nin;}
   inline bool_3S getSaida() const {return saida;}
-  void setSaida(bool_3S s);
+  inline void setSaida(bool_3S s){saida = s;}
   int getId_in(unsigned i) const;
-  void setId_in(unsigned i, int N);
+  bool setId_in(unsigned i, int N);
 
   virtual void digitar();
   virtual bool ler(istream &I);
@@ -130,18 +131,19 @@ private:
   unsigned Nin;      // Numero de entradas
   unsigned Nout;     // Numero de saidas
   unsigned Nportas;  // Numero de portas
-  bool_3S *inputs;   // array que deve ser alocado com dimensao "Nin"
-  int *id_out;       // array que deve ser alocado com dimensao "Nout"
-  ptr_Porta *portas; // array que deve ser alocado com dimensao "Nportas"
-  void limpar();
+  vector<bool_3S> inputs;   // vetor que deve ser alocado com dimensao "Nin"
+  vector<int> id_out;       // vetor que deve ser alocado com dimensao "Nout"
+  vector<ptr_Porta> portas; // vetor que deve ser alocado com dimensao "Nportas"
   void alocar(unsigned NI, unsigned NO, unsigned NP);  // ATENCAO: fora de construtor, sempre chamar antes limpar()
   void copiar(const Circuito &C);                      // ATENCAO: fora de construtor, sempre chamar antes limpar()
 public:
   // As variaveis do tipo Circuito sao sempre criadas sem nenhum dado
   // A definicao do numero de entradas, saidas e portas eh feita ao ler do teclado ou arquivo
-  inline Circuito():Nin(0),Nout(0),Nportas(0),inputs(NULL),id_out(NULL),portas(NULL) {}
+  inline Circuito():Nin(0),Nout(0),Nportas(0),inputs(),id_out(),portas() {}
   // Construtor por copia apenas chama a funcao copiar
   inline Circuito(const Circuito &C) {copiar(C);}
+  // Limpa todo o conteudo do circuito
+  void limpar();
   // Destrutor apenas chama a funcao limpar
   inline ~Circuito() {limpar();}
   // Operador de atribuicao apenas chama as funcoes copiar e limpar
